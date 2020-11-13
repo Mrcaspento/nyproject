@@ -1,5 +1,5 @@
 var apiKey = "wl3TeYSBuwDsDxyW8rc3TGrXdcEzt7BM";
-var userSearch = $('.exampleFormControlSelect1').val().trim();
+var userSearch = $('.search-term').val().trim();
 var articleNumber = $('$records-retrieve').val();
 // var startYear = 
 // var endYear =  
