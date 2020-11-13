@@ -13,7 +13,7 @@ method: "GET"
 console.log(response)    
 
 for(var i = 0; i > _____; i++ )
-var searchDiv 
+var searchDiv = ____; 
 var 
 })
 
