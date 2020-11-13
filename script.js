@@ -1,21 +1,28 @@
-var apiKey= "wl3TeYSBuwDsDxyW8rc3TGrXdcEzt7BM";
-var userSearch = $('_______').val().trim();
-var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + userSearcht + "&api-key=" + apiKey
-var articleNumber = $('________').val();;
+var apiKey = "wl3TeYSBuwDsDxyW8rc3TGrXdcEzt7BM";
+var userSearch = $('.exampleFormControlSelect1').val().trim();
+var articleNumber = $('$records-retrieve').val();
+// var startYear = 
+// var endYear =  
+
+var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + userSearch + articleNumber + "&api-key=" + apiKey;
 
 
+$('#search-button').on('click', function (event) {
+    event.preventDefault();
 
-;
-$.ajax({
-url: queryURL,
-method: "GET"
-}).then(function(response){
-console.log(response)    
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).then(function (response) {
+        console.log(response)
+        var articles = response.Article
+        for (var i = 0; i > articleNumber; i++) {
 
-for(var i = 0; i > _____; i++ )
-var searchDiv = ____; 
-var 
+        }
+        var articleDiv = $("<div>");
+        var p = $('<p>').t
+        $(articleDiv).add
+        $("#Top-articles").append(articleDiv);
+    }
+    )
 })
-
-
-
